@@ -1,0 +1,11 @@
+version: 1
+project: my-project
+
+repositories:
+
+    example-nestjs:
+        url: https://github.com/dockhost/example-nestjs.git
+        branch: main
+        cpu: 1
+        cpuFraction: 20
+        memory: 256MiB
