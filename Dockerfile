@@ -14,7 +14,8 @@ RUN npm run build && npm prune --omit=dev
 # Final run stage
 FROM node:lts-alpine
 
-ENV NODE_ENV production
+ENV NODE_ENV=production
+
 USER node
 WORKDIR /home/node
 
