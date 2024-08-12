@@ -10,7 +10,6 @@ RUN npm ci
 COPY --chown=node:node . .
 RUN npm run build && npm prune --omit=dev
 
-
 # Final run stage
 FROM node:lts-alpine
 
